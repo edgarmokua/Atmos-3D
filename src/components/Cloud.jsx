@@ -9,7 +9,7 @@ import { fadeOnBeforeCompile } from '../utils/fadeMaterial'
 import { useFrame } from '@react-three/fiber'
 
 export default function Cloud({sceneOpacity, ...props}) {
-  const { nodes, materials} = useGLTF('./models/cloud.glb')
+  const { nodes} = useGLTF('./models/cloud.glb')
   const materialRef = useRef();
 
   useFrame(() => {
