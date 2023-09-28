@@ -11,7 +11,7 @@ export default function Cloud({opacity, ...props}) {
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.cloudball001.geometry} >
-        <meshStandardMaterial {...nodes.cloudball001.material} transparent opacity={opacity}/>
+        <meshStandardMaterial envMapIntensity={2} transparent opacity={opacity}/>
         </mesh>
     </group>
   )
